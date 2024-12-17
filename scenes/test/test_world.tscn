@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c06t0nih7sn2e"]
+
+[ext_resource type="PackedScene" uid="uid://dl7ixljnf5b5q" path="res://scenes/characters/player/player.tscn" id="1_o01o1"]
+[ext_resource type="PackedScene" uid="uid://bgp2ak1g6rcab" path="res://scenes/ui/game_screen.tscn" id="1_t3drg"]
+
+[node name="TestWorld" type="Node2D"]
+
+[node name="GameScreen" parent="." instance=ExtResource("1_t3drg")]
+
+[node name="Player" parent="." instance=ExtResource("1_o01o1")]
+position = Vector2(87, 63)
+current_tool = 3

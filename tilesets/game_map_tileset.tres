@@ -1,12 +1,11 @@
 [gd_resource type="TileSet" load_steps=10 format=3 uid="uid://f5ufv1efm2jn"]
 
-[ext_resource type="Texture2D" uid="uid://dtpvvidfa0f2t" path="res://art/tilesets/plains.png" id="1_wr5mm"]
 [ext_resource type="Texture2D" uid="uid://6ev2s2cej6ng" path="res://art/tilesets/grass.png" id="2_h208m"]
 [ext_resource type="Texture2D" uid="uid://bxaabluwmkw0q" path="res://art/objects/objects.png" id="3_g3xji"]
 [ext_resource type="Texture2D" uid="uid://cvjs4whloy5af" path="res://art/tilesets/spr_tileset_sunnysideworld_16px.png" id="4_v1n54"]
+[ext_resource type="Texture2D" uid="uid://dbkkvpmq7kre6" path="res://art/tilesets/SunnysideWorld_Tileset_V0.1.png" id="5_8n437"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmucg"]
-texture = ExtResource("1_wr5mm")
 2:1/0 = 0
 2:1/0/terrain_set = 0
 2:1/0/terrain = 0
@@ -1856,7 +1855,8 @@ texture = ExtResource("4_v1n54")
 42:49/0 = 0
 43:49/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kr8ge"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yjsc5"]
+texture = ExtResource("5_8n437")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -2286,4 +2286,4 @@ sources/0 = SubResource("TileSetAtlasSource_lmucg")
 sources/1 = SubResource("TileSetAtlasSource_ub8sd")
 sources/3 = SubResource("TileSetAtlasSource_nyud7")
 sources/5 = SubResource("TileSetAtlasSource_sfpjf")
-sources/6 = SubResource("TileSetAtlasSource_kr8ge")
+sources/7 = SubResource("TileSetAtlasSource_yjsc5")

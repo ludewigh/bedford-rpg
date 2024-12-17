@@ -1,0 +1,185 @@
+[gd_resource type="Theme" load_steps=33 format=3 uid="uid://ctskjtcxq00rk"]
+
+[ext_resource type="Texture2D" uid="uid://duh6figdlo45n" path="res://art/ui/ALL UI ASSETS on one sheet.png" id="1_fq6rv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4sjr"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(393, 105, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_44kc4"]
+texture = SubResource("AtlasTexture_a4sjr")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w8gv2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uenja"]
+atlas = SubResource("CompressedTexture2D_w8gv2")
+region = Rect2(59, 11, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1n2h2"]
+texture = SubResource("AtlasTexture_uenja")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yao72"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m36ox"]
+atlas = SubResource("CompressedTexture2D_yao72")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hdbsn"]
+texture = SubResource("AtlasTexture_m36ox")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_naesx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdo0e"]
+atlas = SubResource("CompressedTexture2D_naesx")
+region = Rect2(59, 107, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ytxrx"]
+texture = SubResource("AtlasTexture_xdo0e")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7cspx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m14c0"]
+atlas = SubResource("CompressedTexture2D_7cspx")
+region = Rect2(59, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jcmln"]
+texture = SubResource("AtlasTexture_m14c0")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_npw06"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uh37"]
+atlas = SubResource("CompressedTexture2D_npw06")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xrcq6"]
+texture = SubResource("AtlasTexture_7uh37")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcl2v"]
+region = Rect2(504, 131, 35, 18)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ik4w"]
+texture = SubResource("AtlasTexture_fcl2v")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 0, 35, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q28dm"]
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_arwtk"]
+texture = SubResource("AtlasTexture_q28dm")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rd8k6"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(11, 11, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oxsir"]
+texture = SubResource("AtlasTexture_rd8k6")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evg5s"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(11, 59, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h5dhp"]
+texture = SubResource("AtlasTexture_evg5s")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1hwq"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(11, 107, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q7h61"]
+texture = SubResource("AtlasTexture_u1hwq")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epseb"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iv4lw"]
+texture = SubResource("AtlasTexture_epseb")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p573t"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(11, 59, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_owlcv"]
+texture = SubResource("AtlasTexture_p573t")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+
+[resource]
+DarkWoodPanel/base_type = &"PanelContainer"
+DarkWoodPanel/styles/panel = SubResource("StyleBoxTexture_44kc4")
+DayAndNightButton/base_type = &"Button"
+DayAndNightButton/styles/disabled = SubResource("StyleBoxTexture_1n2h2")
+DayAndNightButton/styles/focus = SubResource("StyleBoxTexture_hdbsn")
+DayAndNightButton/styles/hover = SubResource("StyleBoxTexture_ytxrx")
+DayAndNightButton/styles/normal = SubResource("StyleBoxTexture_jcmln")
+DayAndNightButton/styles/pressed = SubResource("StyleBoxTexture_xrcq6")
+DayAndNightCounterPanel/base_type = &"PanelContainer"
+DayAndNightCounterPanel/styles/panel = SubResource("StyleBoxTexture_3ik4w")
+DayAndNightLabel/base_type = &"Label"
+DayAndNightLabel/font_sizes/font_size = 18
+DayAndNightLabel/fonts/font = null
+InventoryItemPanel/base_type = &"PanelContainer"
+InventoryItemPanel/styles/panel = SubResource("StyleBoxTexture_arwtk")
+InventoryLabel/base_type = &"Label"
+InventoryLabel/font_sizes/font_size = 8
+InventoryLabel/fonts/font = null
+MarginContainer/constants/margin_bottom = 5
+MarginContainer/constants/margin_left = 5
+MarginContainer/constants/margin_right = 5
+MarginContainer/constants/margin_top = 5
+ToolButton/base_type = &"Button"
+ToolButton/styles/disabled = SubResource("StyleBoxTexture_oxsir")
+ToolButton/styles/focus = SubResource("StyleBoxTexture_h5dhp")
+ToolButton/styles/hover = SubResource("StyleBoxTexture_q7h61")
+ToolButton/styles/normal = SubResource("StyleBoxTexture_iv4lw")
+ToolButton/styles/pressed = SubResource("StyleBoxTexture_owlcv")
