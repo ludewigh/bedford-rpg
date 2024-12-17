@@ -5,8 +5,8 @@ enum Tools {
 	AxeWood,
 	TillGround,
 	WaterCrops,
-	PlantCorn,
-	PlantTomato,
-	Attack,
-	Hammer
+	Pickaxe,
+	Rod,
+	Hammer,
+	Attack
 }

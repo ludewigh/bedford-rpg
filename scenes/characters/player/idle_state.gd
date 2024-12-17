@@ -41,8 +41,10 @@ func _on_next_transitions() -> void:
 		transition.emit("Attacking")
 	if player.current_tool == DataTypes.Tools.Hammer && GameInputEvents.use_tool():
 		transition.emit("Hammering")
-	if player.current_tool == DataTypes.Tools.WaterCrops && GameInputEvents.use_tool():
-		transition.emit("Watering")
+	if player.current_tool == DataTypes.Tools.Pickaxe && GameInputEvents.use_tool():
+		transition.emit("Mining")
+	if player.current_tool == DataTypes.Tools.Rod && GameInputEvents.use_tool():
+		transition.emit("Fishing")
 func _on_enter() -> void:
 	pass
 
