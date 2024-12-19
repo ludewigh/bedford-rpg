@@ -1,11 +1,21 @@
-[gd_scene load_steps=6 format=4 uid="uid://kge358em5fiu"]
+[gd_scene load_steps=10 format=4 uid="uid://kge358em5fiu"]
 
 [ext_resource type="TileSet" uid="uid://f5ufv1efm2jn" path="res://tilesets/game_map_tileset.tres" id="1_viwqx"]
 [ext_resource type="PackedScene" uid="uid://bgp2ak1g6rcab" path="res://scenes/ui/game_screen.tscn" id="1_voqug"]
 [ext_resource type="PackedScene" uid="uid://dl7ixljnf5b5q" path="res://scenes/characters/player/player.tscn" id="2_u5xpr"]
+[ext_resource type="PackedScene" uid="uid://be2yip5cs5axk" path="res://scenes/components/inventory_item.tscn" id="2_xaykt"]
 [ext_resource type="PackedScene" uid="uid://druagnfh1oib" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="3_ha2oc"]
+[ext_resource type="Texture2D" uid="uid://dlu35oajicjdm" path="res://art/objects/items-spritesheet.png" id="3_mmlf4"]
 
 [sub_resource type="TileSet" id="TileSet_r6kc8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfmns"]
+atlas = ExtResource("3_mmlf4")
+region = Rect2(32, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dlwn"]
+atlas = ExtResource("3_mmlf4")
+region = Rect2(16, 64, 16, 16)
 
 [node name="world" type="Node2D"]
 
@@ -59,11 +69,36 @@ tile_set = ExtResource("1_viwqx")
 tile_map_data = PackedByteArray("AAAFAA4ABQAqAA0AAAAFAA0ABQAqAAwAAAAFAAwABQAqAAwAAAAFAAsABQAqAAsAAAA1AA8ABQAsABIAAAA1ABAABQAsABMAAAA1ABEABQAsABQAAAA1ABIABQAsABUAAAA2AA8ABQAtABIAAAA2ABAABQAtABMAAAA2ABEABQAtABQAAAA2ABIABQAtABUAAAAtAA8ABQAPACYAAAAuAA8ABQAhACUAAAAvAA8ABQAMAAwAAAAxAA8ABQARACUAAAAxAA4ABQARACQAAAAxAA0ABQARACMAAAAxAAwABQARACEAAAAwAA4ABQAQACQAAAAuAA4ABQAQACQAAAAvAA4ABQAQACQAAAAtAA4ABQAPACQAAAAtAA0ABQAPACMAAAAtAAwABQAPACEAAAAwAA0ABQAbACUAAAAvAA0ABQAbACUAAAAuAA0ABQAbAAUAAAA=")
 tile_set = ExtResource("1_viwqx")
 
+[node name="Items" type="TileMapLayer" parent="GameRoot/LevelRoot/Level1"]
+tile_set = ExtResource("1_viwqx")
+
+[node name="InventoryItem" parent="GameRoot/LevelRoot/Level1" instance=ExtResource("2_xaykt")]
+position = Vector2(505, 333)
+item_type = "Consumable"
+item_name = "Apple"
+item_texture = SubResource("AtlasTexture_pfmns")
+item_effect = "Health"
+
+[node name="InventoryItem2" parent="GameRoot/LevelRoot/Level1" instance=ExtResource("2_xaykt")]
+position = Vector2(703, 283)
+item_type = "Consumable"
+item_name = "Apple"
+item_texture = SubResource("AtlasTexture_pfmns")
+item_effect = "Health"
+
+[node name="InventoryItem3" parent="GameRoot/LevelRoot/Level1" instance=ExtResource("2_xaykt")]
+position = Vector2(724, 331)
+item_type = "Consumable"
+item_name = "Apple"
+item_texture = SubResource("AtlasTexture_pfmns")
+item_effect = "Health"
+
 [node name="GameScreen" parent="." instance=ExtResource("1_voqug")]
 
 [node name="TestSceneEnableToolButtonsComponent" parent="." instance=ExtResource("3_ha2oc")]
+item_texture = SubResource("AtlasTexture_5dlwn")
 
 [node name="PlayerMain" parent="." instance=ExtResource("2_u5xpr")]
-position = Vector2(613, 300)
+position = Vector2(588, 294)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerMain"]

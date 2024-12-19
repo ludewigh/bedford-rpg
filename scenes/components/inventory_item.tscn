@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://be2yip5cs5axk"]
+
+[ext_resource type="Script" path="res://scenes/components/inventory_item.gd" id="1_h1jlh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xnu5l"]
+radius = 8.0
+
+[node name="InventoryItem" type="Node2D" groups=["items"]]
+script = ExtResource("1_h1jlh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_xnu5l")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

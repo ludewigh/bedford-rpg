@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=33 format=3 uid="uid://ctskjtcxq00rk"]
+[gd_resource type="Theme" load_steps=41 format=3 uid="uid://ctskjtcxq00rk"]
 
 [ext_resource type="Texture2D" uid="uid://duh6figdlo45n" path="res://art/ui/ALL UI ASSETS on one sheet.png" id="1_fq6rv"]
+[ext_resource type="FontVariation" uid="uid://blma3wae5gkky" path="res://art/ui/fonts/zx_palm_variation.tres" id="2_ygpfw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a4sjr"]
 atlas = ExtResource("1_fq6rv")
@@ -89,15 +90,43 @@ texture_margin_right = 2.0
 texture_margin_bottom = 3.0
 region_rect = Rect2(0, 0, 35, 18)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jv2x0"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(203, 7, 26, 18)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gnqar"]
+texture = SubResource("AtlasTexture_jv2x0")
+expand_margin_left = 5.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6eif"]
+resource_name = "name"
+atlas = ExtResource("1_fq6rv")
+region = Rect2(59, 11, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4xpcx"]
+texture = SubResource("AtlasTexture_u6eif")
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_q28dm"]
+atlas = ExtResource("1_fq6rv")
 region = Rect2(59, 59, 26, 26)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_arwtk"]
+resource_name = "Hello"
 texture = SubResource("AtlasTexture_q28dm")
 texture_margin_left = 4.0
 texture_margin_top = 4.0
 texture_margin_right = 4.0
 texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_coxmc"]
+atlas = ExtResource("1_fq6rv")
+region = Rect2(59, 11, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_picf5"]
+texture = SubResource("AtlasTexture_coxmc")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ongtx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rd8k6"]
 atlas = ExtResource("1_fq6rv")
@@ -168,11 +197,22 @@ DayAndNightCounterPanel/styles/panel = SubResource("StyleBoxTexture_3ik4w")
 DayAndNightLabel/base_type = &"Label"
 DayAndNightLabel/font_sizes/font_size = 18
 DayAndNightLabel/fonts/font = null
+InventoryItemCount/base_type = &"PanelContainer"
+InventoryItemCount/styles/panel = SubResource("StyleBoxTexture_gnqar")
 InventoryItemPanel/base_type = &"PanelContainer"
+InventoryItemPanel/styles/disable = SubResource("StyleBoxTexture_4xpcx")
 InventoryItemPanel/styles/panel = SubResource("StyleBoxTexture_arwtk")
+InventoryItemPanelDisable/base_type = &"PanelContainer"
+InventoryItemPanelDisable/styles/panel = SubResource("StyleBoxTexture_picf5")
 InventoryLabel/base_type = &"Label"
 InventoryLabel/font_sizes/font_size = 8
 InventoryLabel/fonts/font = null
+InventorySlotControl/base_type = &"PanelContainer"
+InventorySlotControl/styles/panel = SubResource("StyleBoxEmpty_ongtx")
+ItemIconCount/base_type = &"Label"
+ItemIconCount/colors/font_color = Color(0, 0, 0, 1)
+ItemIconCount/font_sizes/font_size = 8
+ItemIconCount/fonts/font = ExtResource("2_ygpfw")
 MarginContainer/constants/margin_bottom = 5
 MarginContainer/constants/margin_left = 5
 MarginContainer/constants/margin_right = 5

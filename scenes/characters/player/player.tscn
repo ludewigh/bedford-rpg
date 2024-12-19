@@ -1,4 +1,4 @@
-[gd_scene load_steps=367 format=3 uid="uid://dl7ixljnf5b5q"]
+[gd_scene load_steps=368 format=3 uid="uid://dl7ixljnf5b5q"]
 
 [ext_resource type="Texture2D" uid="uid://5flg0td2643k" path="res://art/characters/Human/IDLE/spikeyhair_idle_strip9.png" id="1_3x0lg"]
 [ext_resource type="Script" path="res://scenes/characters/player/player.gd" id="1_ceo8y"]
@@ -40,6 +40,7 @@
 [ext_resource type="Script" path="res://scenes/characters/player/watering_state.gd" id="31_rqtdd"]
 [ext_resource type="Script" path="res://scenes/characters/player/fishing_state.gd" id="35_8o8vp"]
 [ext_resource type="Script" path="res://scenes/characters/player/mining_state.gd" id="39_6deif"]
+[ext_resource type="PackedScene" uid="uid://bbtv8s5hjo8im" path="res://scenes/components/interactable_label_component.tscn" id="40_ojxsn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cr5pk"]
 radius = 6.0
@@ -3225,6 +3226,14 @@ animation_player = NodePath("../../AnimationPlayer")
 body = NodePath("../../Body")
 hair = NodePath("../../Hair")
 tools = NodePath("../../Tools")
+
+[node name="InteractableLabelComponent" parent="." instance=ExtResource("40_ojxsn")]
+visible = false
+offset_left = -36.0
+offset_top = -34.0
+offset_right = -36.0
+offset_bottom = -34.0
+scale = Vector2(0.5, 0.5)
 
 [node name="HitComponent" parent="." instance=ExtResource("14_28u47")]
 
