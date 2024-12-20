@@ -32,10 +32,12 @@ theme_type_variation = &"InventoryItemPanel"
 
 [node name="ItemIcon" type="TextureRect" parent="MarginContainer/ItemContainer"]
 y_sort_enabled = true
+custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = SubResource("AtlasTexture_v2wvc")
+expand_mode = 1
 
 [node name="CountContainer" type="PanelContainer" parent="."]
 z_index = 1

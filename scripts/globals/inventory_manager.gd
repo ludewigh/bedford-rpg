@@ -2,10 +2,19 @@ extends Node
 
 @onready var inventory_slot_scene = preload("res://scenes/ui/inventory_slot.tscn")
 
+@export var berry : Texture
+
 signal inventory_updated
 
 var inventory = []
 var player_node: Node = null
+
+var spawnable_items = [
+	{"type": "Consumable", "name": "Berry", "effect": "Health", "texture": preload("res://art/objects/icon31.png")},
+	{"type": "Consumable", "name": "Water", "effect": "Stamina", "texture": preload("res://art/objects/icon9.png")},
+	{"type": "Consumable", "name": "Mushroom", "effect": "Armor", "texture": preload("res://art/objects/icon32.png")},
+	{"type": "Gift", "name": "Gemstone", "effect": "", "texture": preload("res://art/objects/icon21.png")},
+]
 
 func _ready():
 	inventory.resize(30)

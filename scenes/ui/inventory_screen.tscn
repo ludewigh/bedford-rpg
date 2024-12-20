@@ -16,6 +16,7 @@ atlas = ExtResource("4_vfwlr")
 atlas = ExtResource("5_ujqhm")
 
 [node name="InventoryScreen" type="PanelContainer" node_paths=PackedStringArray("grid_container")]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -119,4 +120,6 @@ offset_left = -58.5
 offset_right = 58.5
 offset_bottom = 70.0
 grow_horizontal = 2
-columns = 6
+theme_override_constants/h_separation = -4
+theme_override_constants/v_separation = -4
+columns = 8

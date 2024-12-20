@@ -6,29 +6,32 @@
 
 [node name="GameScreen" type="CanvasLayer"]
 
-[node name="InventoryScreenContainer" type="MarginContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="InventoryScreenContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 theme = ExtResource("1_2fyds")
 theme_type_variation = &"MarginContainer"
 
-[node name="InventoryScreen" parent="InventoryScreenContainer" instance=ExtResource("1_uwg7f")]
+[node name="InventoryScreen" parent="VBoxContainer/InventoryScreenContainer" node_paths=PackedStringArray("tool_container") instance=ExtResource("1_uwg7f")]
 process_mode = 3
 layout_mode = 2
+tool_container = NodePath("../../MarginContainer")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
 theme = ExtResource("1_2fyds")
 
-[node name="ToolsPanel" parent="MarginContainer" instance=ExtResource("2_o2chy")]
+[node name="ToolsPanel" parent="VBoxContainer/MarginContainer" instance=ExtResource("2_o2chy")]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8

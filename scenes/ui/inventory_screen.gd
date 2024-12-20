@@ -1,6 +1,7 @@
 extends Control
 
 @export var grid_container: GridContainer
+@export var tool_container: MarginContainer
 
 func _ready():
 	# Connect function to signal to update inventory UI
@@ -11,6 +12,7 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("ui_inventory"):
 		self.visible = !self.visible
+		#tool_container.visible = !self.visible
 		get_tree().paused = !get_tree().paused
 
 
